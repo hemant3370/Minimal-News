@@ -10,8 +10,8 @@ import FeedKit
 
 class FeedRepository {
     
-    class func getFeed(completion: @escaping(Result) -> Void) {
-        let feedURL = URL(string: "http://feeds.bbci.co.uk/news/world/rss.xml")!
+    class func getFeed(url: String?, completion: @escaping(Result) -> Void) {
+        let feedURL = URL(string: url ?? "http://feeds.bbci.co.uk/news/world/rss.xml")!
         let parser = FeedParser(URL: feedURL)
         parser?.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
             // Do your thing, then back to the Main thread

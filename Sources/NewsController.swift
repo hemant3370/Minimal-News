@@ -16,7 +16,9 @@ final class NewsController {
 
   func indexView(request: HTTPRequest, response: HTTPResponse) {
       var values = MustacheEvaluationContext.MapType()
-         FeedRepository.getFeed(completion: { (result) in
+    FeedRepository.getFeed(url: request.queryParams.first(where: { (param) -> Bool in
+        param.0 == "urlInput"
+    })?.1, completion: { (result) in
            values["news"] = result.rssFeed?.items?.map({ $0.toDictionary() })
             mustacheRequest(request: request, response: response, handler: MustacheHelper(values: values), templatePath: request.documentRoot + "/index.mustache")
         })

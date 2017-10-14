@@ -8,15 +8,28 @@
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+<script>
+  function getUrl(){
+    var action_src = "http://localhost:8080/news?url=" + document.getElementsByName("urlInput")[0].value;
+    console.log(action_src);
+    var urlForm = document.getElementById('urlForm');
+    urlForm.action = action_src ;
+}
+</script>
   <div class="container">
-
     <div class="row">
       <div class="u-full-width">
         <h2>NEWS <small>Minimalistic</small></h2>
       </div>
+      <form id="urlForm" onsubmit="getUrl()" method="get">
+        <div class="six columns">
+    <label for="urlInput">Any Feed link</label>
+    <input class="u-full-width" type="text" placeholder="Paste the Url here" id="urlInput" name="urlInput">
+     <input class="button-primary" type="submit" value="Submit">
     </div>
-
+      </form>
+    
+    </div>
     {{#news}}
     <div class="row">
       <div class="four columns">
