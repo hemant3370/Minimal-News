@@ -904,7 +904,7 @@
 		OBJ_970 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_891 /* Package.swift */; };
 		OBJ_976 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_893 /* Package.swift */; };
 		OBJ_982 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_909 /* Package.swift */; };
-		OBJ_988 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* File.swift */; };
+		OBJ_988 /* FeedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* FeedRepository.swift */; };
 		OBJ_989 /* MustacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* MustacheHelper.swift */; };
 		OBJ_990 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* NewsController.swift */; };
 		OBJ_991 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* main.swift */; };
@@ -2009,7 +2009,7 @@
 		OBJ_797 /* ts_err.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ts_err.c; sourceTree = "<group>"; };
 		OBJ_798 /* ts_lib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ts_lib.c; sourceTree = "<group>"; };
 		OBJ_799 /* ts_req_print.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ts_req_print.c; sourceTree = "<group>"; };
-		OBJ_8 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		OBJ_8 /* FeedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRepository.swift; sourceTree = "<group>"; };
 		OBJ_80 /* MediaRestriction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRestriction.swift; sourceTree = "<group>"; };
 		OBJ_800 /* ts_req_utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ts_req_utils.c; sourceTree = "<group>"; };
 		OBJ_801 /* ts_rsp_print.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ts_rsp_print.c; sourceTree = "<group>"; };
@@ -3381,7 +3381,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* File.swift */,
+				OBJ_8 /* FeedRepository.swift */,
 				OBJ_9 /* MustacheHelper.swift */,
 				OBJ_10 /* NewsController.swift */,
 				OBJ_11 /* main.swift */,
@@ -4914,7 +4914,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_988 /* File.swift in Sources */,
+				OBJ_988 /* FeedRepository.swift in Sources */,
 				OBJ_989 /* MustacheHelper.swift in Sources */,
 				OBJ_990 /* NewsController.swift in Sources */,
 				OBJ_991 /* main.swift in Sources */,
