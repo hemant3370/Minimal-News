@@ -11,13 +11,14 @@ import FeedKit
 class FeedRepository {
     
     class func getFeed(url: String?, completion: @escaping(Result) -> Void) {
-        let feedURL = URL(string: url ?? "http://feeds.bbci.co.uk/news/world/rss.xml")!
-        let parser = FeedParser(URL: feedURL)
-        parser?.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
-            // Do your thing, then back to the Main thread
-            print(result.isSuccess)
-            completion(result)
-           
+        if let feedURL = URL(string: url ?? "http://feeds.bbci.co.uk/news/world/rss.xml"){
+            let parser = FeedParser(URL: feedURL)
+            parser?.parseAsync(queue: DispatchQueue.global(qos: .userInitiated)) { (result) in
+                // Do your thing, then back to the Main thread
+                print(result.isSuccess)
+                completion(result)
+                
+            }
         }
     }
 }
